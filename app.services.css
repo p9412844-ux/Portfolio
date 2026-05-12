@@ -1,0 +1,110 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.app-dev-container {
+    max-width: 1000px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(2, 47, 66, 0.356);
+}
+
+/* Header Styling */
+.content-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.content-header h1 {
+    color: orange; 
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.content-header p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: rgb(5, 49, 66);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+}
+
+/* Image Gallery with Hover Effects */
+.image-gallery {
+    flex: 1;
+    display: flex;
+    gap: 15px;
+}
+
+.img-box {
+    flex: 1;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 2px solid skyblue; 
+}
+
+.img-box img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+/* Hover Effect */
+.img-box:hover img {
+    transform: scale(1.1);
+    filter: brightness(80%);
+}
+
+/* Points List Styling */
+.points-list {
+    flex: 1;
+}
+
+.points-list h3 {
+    color: orange;
+    margin-bottom: 20px;
+}
+
+.points-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.points-list li {
+    background: white; 
+    margin-bottom: 12px;
+    padding: 15px;
+    border-left: 5px solid skyblue;
+    border-radius: 5px;
+    transition: 0.3s;
+    color: #094954;
+}
+
+.points-list li:hover {
+    transform: translateX(10px);
+    background: skyblue;
+}
+
+.points-list li strong {
+    color: #094954;
+}

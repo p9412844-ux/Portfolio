@@ -1,0 +1,135 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+/* Main Container Card */
+.main {
+    background-color: white; 
+    padding: 50px;
+    text-align: center;
+}
+
+/* Heading Styling */
+h1 {
+    color: rgb(5, 30, 40); 
+    font-size: 28px;
+    margin-top: 0;
+    letter-spacing: 1px;
+}
+h1 span{
+    color: rgb(225, 148, 4);
+}
+
+/* Paragraph Styling */
+.peragraph1 {
+    color: #091822; 
+    line-height: 25px;
+    font-size: 1.05rem;
+    margin-bottom: 75px;
+    padding-top: 50px;
+    letter-spacing: 1px;
+}
+
+
+
+:root {
+    --primary-blue:  rgb(225, 148, 4);
+    --zinc-dark: #18181b;
+    --zinc-light: #f4f4f5;
+    --white: #ffffff;
+}
+
+.dev-page {
+    padding: 80px 20px;
+    background-color: var(--white);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: var(--zinc-dark);
+    margin-bottom: 10px;
+}
+
+.section-title span {
+    color: var(--primary-blue);
+}
+
+.subtitle {
+    color: #71717a;
+    margin-bottom: 50px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background: var(--white);
+    padding: 40px 30px;
+    border-radius: 12px;
+    border: 1px solid #e4e4e7;
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.1);
+    border-color: var(--primary-blue);
+}
+
+.icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    color: var(--zinc-dark);
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: #52525b;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.skills-list {
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills-list li {
+    background: var(--zinc-light);
+    color: var(--zinc-dark);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
