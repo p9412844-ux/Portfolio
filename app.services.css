@@ -108,3 +108,63 @@ body {
 .points-list li strong {
     color: #094954;
 }
+
+@media (max-width: 576px) {
+
+    /* Main content container ko set kiya */
+    .main-content {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 20px !important;
+        margin: 0 auto !important;
+    }
+
+    /* FIX: Images ko ek ke neeche ek lane ke liye column kiya aur center lagaya */
+    .image-gallery {
+        display: flex !important;
+        flex-direction: column !important; /* Is se 1 pic upar aur 1 neeche aayegi */
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 20px !important; /* Dono pictures ke darmiyan ka gap */
+        width: 100% !important;
+        margin-bottom: 30px !important; /* Pictures ke baad jo text shuru hoga us se doori */
+    }
+
+    /* Har image box ko mobile screen ke mutabik full wide aur responsive kiya */
+    .img-box {
+        width: 100% !important;
+        max-width: 280px !important; /* Mobile screen par images ka standard size balance rakhne ke liye */
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+    .img-box img {
+        width: 100% !important;
+        height: auto !important;
+        object-fit: cover !important;
+        border-radius: 12px !important;
+    }
+
+    /* App dev container aur uske text/content blocks ko perfectly screen par wide aur center kiya */
+    .app-dev-container, 
+    .main-content div:not(.image-gallery):not(.img-box) {
+        width: 100% !important;
+        max-width: 100% !important;
+        text-align: center !important;
+        padding: 0 10px !important;
+        margin: 0 auto !important;
+    }
+
+    /* Paragraphs aur headings ko alignment issues se bachane ke liye center lock kiya */
+    .main-content p, 
+    .main-content h3,
+    .main-content h2 {
+        text-align: center !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}

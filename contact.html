@@ -12,11 +12,11 @@
   <nav class="navbar">
     <img class="logo" src="images/logoh1.jpeg" alt="logo">
     <ul>
-      <li><a href="/portfolio.html">Home</a></li>
-      <li><a href="/about.html">About me</a></li>
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/about.html">About Me</a></li>
       <li><a href="/services.html">Services</a></li>
       <li><a href="/projects.html">Projects</a></li>
-      <button><a href="https://wa.me/923011090263 target="_blank" class="contact-btn">Contact</a></button>
+      <a href="https://wa.me/923011090263" target="_blank" class="contact-btn">Contact</a>
     </ul>
   </nav>
 <!-- contact me -->
@@ -54,27 +54,43 @@
                     </div>
 
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
+                    <a href="https://www.facebook.com" target="_blank">
+                     <i class="fa-brands fa-facebook"></i>
+                    </a>
 
-                <div class="contact-form">
-                    <form>
-                        <div class="input-group">
-                            <input type="text" placeholder="Full Name" required>
-                        </div>
-                        <div class="input-group">
-                            <input type="email" placeholder="Email Address" required>
-                        </div>
-                        <div class="input-group">
-                            <textarea placeholder="Your Message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn-submit">Send Message</button>
-                    </form>
+                     <a href="https://wa.me/923077770263" target="_blank">
+                      <i class="fa-brands fa-whatsapp"></i>
+                     </a>
+
+                     <a href="https://www.linkedin.com" target="_blank">
+                       <i class="fa-brands fa-linkedin"></i>
+                     </a>
+
+                    <a href="https://twitter.com" target="_blank">
+                     <i class="fa-brands fa-twitter"></i>
+                    </a>
+                
                 </div>
+               
+            </div>
+
+               <div class="contact-form">
+    <form id="contactForm" action="https://formbold.com/s/3pekb" method="POST">
+        <div class="input-group">
+            <input type="text" name="name" id="userName" placeholder="Full Name" required>
+        </div>
+        <div class="input-group">
+            <input type="email" name="email" id="userEmail" placeholder="Email Address" required>
+        </div>
+        <div class="input-group">
+            <textarea name="message" id="userMessage" placeholder="Your Message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn-submit" id="submitBtn">Send Message</button>
+        
+        <div id="formStatus" style="margin-top: 15px; font-weight: bold; text-align: center;"></div>
+    </form>
+</div>
+ </div>
             </div>
         </div>
     </section>
@@ -98,7 +114,9 @@
                 <ul>
                     <li>E-commerce Site</li>
                     <li>Portfolio Web</li>
-                    <li>Chat App</li>
+                    <li>Thread downloader</li>
+                    <li>Tic-Tac-Teo Game</li>
+                    <li>Stone-Paper-Sessor Game</li>
                 </ul>
             </div>
             </div>
@@ -113,5 +131,6 @@
                 <p>&copy; 2026 Aapki Website. All rights reserved.</p>
         </div>
         </section>
+        <script src="script.js"></script>
 </body>
 </html>

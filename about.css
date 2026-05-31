@@ -184,3 +184,209 @@
     padding: 30px;
     text-align: center;
 }
+
+
+/* ==========================================
+   UPDATED RESPONSIVE MEDIA QUERIES
+   ========================================== */
+
+/* --- TABLET VIEW (max-width: 768px) --- */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column; /* Image text ke upar chali jayegi */
+        text-align: center;
+        gap: 30px;
+    }
+
+    .about-image img {
+        box-shadow: 12px 12px 0px #6ea2db;
+        width: 240px; /* Tablet par thoda chota size */
+        height: 240px;
+    }
+
+    .center-title, .title-text {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .my-experience {
+        padding: 50px 5%;
+    }
+}
+
+/* --- MOBILE VIEW (max-width: 425px) --- */
+@media (max-width: 425px) {
+    /* About Me Section - Image Choti Karne Ke Liye */
+    .about-image img {
+        width: 160px; /* Mobile par width mazeed choti kar di */
+        height: 160px; /* Height bhi proportional kar di */
+        border-radius: 15px;
+        box-shadow: 8px 8px 0px #6ea2db; /* Shadow ko bhi screen ke mutabik chota kiya */
+    }
+
+    .about-content h1 {
+        font-size: 24px;
+        margin-top: 10px;
+    }
+
+    .about-content p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    /* What I Do Section - Laptop Images Choti Karne Ke Liye */
+    .service-section .services-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 0 20px; /* Sides se padding de kar images ko center kiya */
+    }
+
+    .service-card {
+        padding: 15px; /* Card ki extra space kam ki */
+    }
+
+    .service-card img {
+        height: 150px; /* Laptop images ki height 200px se kam karke 150px kar di */
+        border-radius: 8px;
+    }
+
+    /* Timeline Adjustments for Mobile */
+    .timeline {
+        margin-left: 5px;
+        padding-left: 15px;
+    }
+
+    .timeline-item .dot {
+        left: -24px; /* Mobile line ke mutabik dot position fix */
+        width: 16px;
+        height: 16px;
+    }
+
+    .timeline-item .content {
+        padding: 15px;
+    }
+
+    .timeline-item .content h3 {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 425px) {
+
+    /* About Me Image Small Size Fix */
+    .about-image img {
+        width: 180px !important;  /* Image ki width choti kar di */
+        height: 180px !important; /* Height bhi proportional kar di */
+        border-radius: 15px;      /* Corners thode soft kar diye */
+        
+        /* Jo blue shadow pixelate ho rahi thi, usko center aur clean kiya */
+        box-shadow: 0 10px 25px rgba(110, 162, 219, 0.6); 
+        
+        margin: 0 auto 15px auto; /* Image ko left-right se center karne ke liye */
+        display: block;
+    }
+
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Image aur content dono center align ho jayein */
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .about-content h1 {
+        font-size: 22px; /* Text size heading ka thoda chota kiya */
+    }
+
+    .about-content p {
+        font-size: 14px;
+        padding: 0 10px; /* Text screen ke edges se touch na ho */
+    }
+}
+
+/* --- MOBILE VIEW (425px aur us se choti screens ke liye) --- */
+@media (max-width: 425px) {
+    
+    /* Hamburger Menu Open Setup */
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar ul {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: rgb(5, 30, 40);
+        flex-direction: column;
+        text-align: center;
+        display: none;
+        padding: 20px 0;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+    }
+
+    .navbar ul.active {
+        display: flex;
+    }
+
+    .navbar input {
+        display: none; /* Mobile par search input ko hide kiya clutter se bachne ke liye */
+    }
+
+    /* About Section Container Setup */
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Image aur text dono center ho jayein */
+        text-align: center;
+        gap: 25px;
+        padding: 0 10px;
+    }
+
+    /* Image Size Fix for 425px and 320px */
+    .about-image img {
+        width: 200px !important;  /* 425px screen ke liye perfect size */
+        height: 200px !important;
+        max-width: 80vw;          /* Agar screen 320px ho toh automatic mazeed choti ho jaye */
+        max-height: 80vw;
+        border-radius: 15px;
+        object-fit: cover;
+        
+        /* Modern shadow layout jo design ko responsive rakhega */
+        box-shadow: 12px 12px 0px #6ea2db; 
+        margin-bottom: 10px;
+    }
+
+    /* Text Adjustments */
+    .about-content h1 {
+        font-size: 26px;
+        margin-bottom: 15px;
+    }
+
+    .about-content p {
+        font-size: 15px;
+        line-height: 1.6;
+        padding: 0 5px;
+    }
+
+    .about-content .btn {
+        padding: 10px 25px;
+        font-size: 15px;
+    }
+}
+@media (max-width: 576px) {
+    /* Jab active class add ho toh menu dikhe */
+    .navbar ul.active {
+        display: flex !important;
+    }
+}
+.menu-toggle {
+    display: none; /* Desktop par hide rahega */
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+    
+    /* YEH DO LINES LAZMI ADD KAREIN */
+    position: relative; 
+    z-index: 1001; /* Is se click har haal mein kaam karega */
+}
